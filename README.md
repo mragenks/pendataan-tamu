@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # pendataan_tamu_perumahan
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# pendataan-tamu
+>>>>>>> 7cbdbc0f978c095f0cb172af21c6e80987a99c96
