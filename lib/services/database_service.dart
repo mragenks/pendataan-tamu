@@ -15,6 +15,11 @@ class DatabaseService {
     return _database!;
   }
 
+  Future<void> resetData() async {
+    final db = await database;
+    await db.delete('guests'); // Ganti 'guests' dengan nama tabel Anda
+  }
+
   Future<Database> _initDB() async {
     String path = join(await getDatabasesPath(), 'guest_database.db');
     return await openDatabase(
