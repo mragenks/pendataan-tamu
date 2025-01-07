@@ -10,19 +10,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Guest Management',
+      debugShowCheckedModeBanner: false,
       home: FutureBuilder<bool>(
         future: AuthService().isLoggedIn(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return CircularProgressIndicator();
           }
-          
+
           if (snapshot.data == true) {
             return DashboardScreen();
           }
-          
+
           return LoginScreen();
-        },
+        }, 
       ),
     );
   }
